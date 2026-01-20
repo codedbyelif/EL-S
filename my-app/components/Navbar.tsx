@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const menuItems = [
         { name: "Products", href: "#" },
-        { name: "Resources", href: "#" },
+        { name: "Resources", href: "/resources" },
         { name: "Integration", href: "#" },
     ];
 
