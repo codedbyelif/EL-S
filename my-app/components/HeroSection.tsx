@@ -18,6 +18,8 @@ const HeroSection = () => {
                     chromaticAberration={0.002}
                     noiseIntensity={0.01}
                 />
+                {/* Gradient fade overlay */}
+                <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background via-background/80 to-transparent z-10 pointer-events-none" />
             </div>
             <div className="relative z-20 flex flex-col items-center justify-center">
                 <div className="flex w-fit flex-col items-center justify-center gap-4 pb-3 text-center">

@@ -8,21 +8,15 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const menuItems = [
-        { name: "Products", href: "#" },
-        { name: "Resources", href: "/resources" },
-        { name: "Integration", href: "#" },
+        { name: "Ana Sayfa", href: "/" },
+        { name: "Hakkımda", href: "/about" },
+        { name: "Projelerim", href: "/projects" },
+        { name: "İletişim", href: "/contact" },
     ];
 
     return (
         <section className="absolute top-0 left-0 right-0 z-50 mx-auto flex max-w-full items-center justify-between bg-transparent px-6 py-3 md:w-fit md:rounded-b-2xl lg:gap-4 w-full">
-            <Link href="/" className="flex items-center gap-1">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                    className="max-h-5"
-                    alt="logo"
-                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg"
-                />
-            </Link>
+
 
             {/* Mobile Menu Trigger */}
             <div className="mr-2 flex items-center justify-center md:hidden">
