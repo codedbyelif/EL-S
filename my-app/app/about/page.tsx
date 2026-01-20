@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import FeatureSection from "@/components/FeatureSection";
+import InspirationSection from "@/components/InspirationSection";
 
 export default function AboutPage() {
     return (
@@ -8,6 +9,7 @@ export default function AboutPage() {
             <div className="pt-32">
 
                 <FeatureSection />
+                <InspirationSection />
             </div>
         </main>
     );
