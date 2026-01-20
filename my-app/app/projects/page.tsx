@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import BlogSection from "@/components/BlogSection";
+import LogoCarousel from "@/components/LogoCarousel";
 
 export default function ProjectsPage() {
     return (
@@ -8,6 +9,7 @@ export default function ProjectsPage() {
             <div className="pt-32">
 
                 <BlogSection />
+                <LogoCarousel />
             </div>
         </main>
     );
