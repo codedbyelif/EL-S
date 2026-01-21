@@ -12,7 +12,7 @@ const logos = [
 
 const LogoCarousel = () => {
     return (
-        <section className="py-24 w-full overflow-hidden">
+        <section className="py-10 w-full overflow-hidden">
             <div className="container mx-auto px-6 lg:px-20">
                 <div className="relative w-full mask-gradient-x">
                     <div className="flex w-full overflow-hidden pause-on-hover px-4">

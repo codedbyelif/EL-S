@@ -52,61 +52,82 @@ const PhoneFrame = ({ src, alt, className = "" }: { src: string; alt: string; cl
 
 const AppShowcase = () => {
     return (
-        <section className="overflow-hidden py-32 w-full">
-            <div className="container mx-auto px-6 lg:px-20 border-b border-white/10 pb-32">
-                <div className="flex flex-col items-center gap-10">
+        <section className="overflow-hidden py-10 w-full bg-black text-white">
+            <div className="container mx-auto px-6 lg:px-20 border-b border-white/10 pb-0">
+                <div className="flex flex-col items-center gap-6">
                     <span className="inline-flex items-center justify-center rounded-full border border-white/10 px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 gap-1 text-white hover:bg-white/5 transition-colors">
                         Get Started
                     </span>
-                    <h1 className="text-center text-5xl font-bold text-balance md:text-6xl text-white">
+                    <h1 className="text-center text-4xl font-bold text-balance md:text-5xl lg:text-6xl text-white">
                         Download our app and transform your workflow today
                     </h1>
                 </div>
-                <div className="mt-16 flex flex-col items-center justify-center gap-6 sm:flex-row">
+                <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
                     <Link href="#">
                         <img
                             alt="app store"
                             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/badges/appstore.svg"
-                            className="h-10 w-auto"
+                            className="h-8 w-auto"
                         />
                     </Link>
                     <Link href="#">
                         <img
                             alt="google play"
                             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/badges/googleplay.svg"
-                            className="h-10 w-auto"
+                            className="h-8 w-auto"
                         />
                     </Link>
                 </div>
-                <div className="mt-28 flex items-end justify-center gap-4">
-                    {/* Phone 1 */}
-                    <div className="order-2 h-[600px] w-full max-w-sm overflow-hidden md:h-[350px] lg:h-[450px] xl:h-[600px]">
-                        <div className="relative h-full">
-                            <PhoneFrame
-                                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-phone-1.svg"
-                                alt="Phone 1"
-                                className="block h-full w-full"
-                            />
-                        </div>
-                    </div>
-                    {/* Phone 2 (Hidden on mobile) */}
-                    <div className="order-1 hidden h-[250px] w-full max-w-sm overflow-hidden md:block lg:h-[350px] xl:h-[450px]">
-                        <div className="relative h-full">
+                {/* Phones Container */}
+                <div className="mt-10 flex items-end justify-center gap-0 lg:gap-0 -mx-4 sm:-mx-10 md:mx-0">
+                    {/* Phone 1 (Left) */}
+                    <div className="order-1 relative z-10 w-1/3 max-w-[200px] md:max-w-xs translate-x-4 md:translate-x-8 lg:translate-x-12 opacity-90 scale-90 origin-bottom-right">
+                        <div className="relative aspect-[433/882]">
                             <PhoneFrame
                                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-phone-2.svg"
                                 alt="Phone 2"
-                                className="block h-full w-full"
+                                className="block w-full h-full"
                             />
+                            {/* Logo Overlay */}
+                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+                                <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl">
+                                    <div className="text-white font-bold text-xl">EL-S</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    {/* Phone 3 (Hidden on mobile) */}
-                    <div className="order-3 hidden h-[250px] w-full max-w-sm overflow-hidden md:block lg:h-[350px] xl:h-[450px]">
-                        <div className="relative h-full">
+
+                    {/* Phone 2 (Center - Main) */}
+                    <div className="order-2 relative z-20 w-1/2 max-w-[260px] md:max-w-sm shadow-2xl">
+                        <div className="relative aspect-[433/882]">
+                            <PhoneFrame
+                                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-phone-1.svg"
+                                alt="Phone 1"
+                                className="block w-full h-full"
+                            />
+                            {/* Logo Overlay */}
+                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+                                <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl">
+                                    <div className="text-white font-bold text-3xl">EL-S</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Phone 3 (Right) */}
+                    <div className="order-3 relative z-10 w-1/3 max-w-[200px] md:max-w-xs -translate-x-4 md:-translate-x-8 lg:-translate-x-12 opacity-90 scale-90 origin-bottom-left">
+                        <div className="relative aspect-[433/882]">
                             <PhoneFrame
                                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-phone-3.svg"
                                 alt="Phone 3"
-                                className="block h-full w-full"
+                                className="block w-full h-full"
                             />
+                            {/* Logo Overlay */}
+                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+                                <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl">
+                                    <div className="text-white font-bold text-xl">EL-S</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

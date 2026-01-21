@@ -8,15 +8,12 @@ export default function ProjectsPage() {
     return (
         <main className="min-h-screen bg-black text-white">
             <Navbar />
-            <div className="pt-32">
+            <div className="pt-30">
 
                 <BlogSection />
-                <AppShowcase />
                 <LogoCarousel />
-                <div style={{ height: '600px', position: 'relative' }}>
+                <AppShowcase />
 
-
-                </div>
             </div>
         </main>
     );

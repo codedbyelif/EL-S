@@ -52,9 +52,9 @@ const BlogSection = () => {
             : blogPosts.filter((post) => post.category === activeCategory);
 
     return (
-        <section className="pb-32 w-full bg-background">
+        <section className="pb-10 w-full bg-background">
             <div className="bg-transparent">
-                <div className="container mx-auto flex flex-col items-start justify-start gap-16 py-20 lg:flex-row lg:items-center lg:justify-between px-6">
+                <div className="container mx-auto flex flex-col items-start justify-start gap-16 py-10 lg:flex-row lg:items-center lg:justify-between px-6">
                     <div className="flex w-full flex-col justify-between gap-12">
                         <div className="flex w-full max-w-[36rem] flex-col gap-8">
                             <nav aria-label="breadcrumb">
@@ -130,7 +130,7 @@ const BlogSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-20">
+            <div className="py-10">
                 <div className="container mx-auto flex flex-col gap-8 px-6">
                     <h2 className="text-[1.75rem] leading-none font-medium md:text-[2.25rem] lg:text-[2rem] text-foreground">
                         All Blogs
