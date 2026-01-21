@@ -3,6 +3,7 @@
 import { ArrowRight, Check, Slash } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { projects } from "@/lib/data";
 
 const BlogSection = () => {
     const [activeCategory, setActiveCategory] = useState("Tümü");
@@ -14,42 +15,14 @@ const BlogSection = () => {
         { name: "Yatırım Alan", label: "Yatırım Alan" },
     ];
 
-    const blogPosts = [
-        {
-            category: "En Yeni",
-            title: "5 VS Code Extensions That Will Save You Hours",
-            description:
-                "Discover must-have extensions to boost your coding efficiency and streamline your workflow.",
-            image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-            buttonText: "Boost Your Editor",
-        },
-        {
-            category: "Devam Eden",
-            title: "Time Management for Developers: What Really Works",
-            description:
-                "Learn proven strategies to avoid burnout and stay on top of your tasks without stress.",
-            image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-            buttonText: "Manage Your Time",
-        },
-        {
-            category: "Yatırım Alan",
-            title: "Automate Your Workflow with Task Runners",
-            description:
-                "Use tools like Gulp, npm scripts, and GitHub Actions to automate repetitive development tasks.",
-            image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-            buttonText: "Automate Now",
-        },
+    // Separate the featured project (first one) and the rest
+    const featuredProject = projects[0];
+    const otherProjects = projects.slice(1);
 
-    ];
-
-    // Logic to filter posts (if we wanted true filtering)
-    // For now, I'll display the list similar to the snippet, but potentially filtered by activeCategory if desired.
-    // The snippet showed many "Productivity" posts and some "Accessibility" ones.
-    // I will just show all of them or filter if 'All' is not selected.
     const displayedPosts =
         activeCategory === "Tümü"
-            ? blogPosts
-            : blogPosts.filter((post) => post.category === activeCategory);
+            ? otherProjects
+            : otherProjects.filter((post) => post.category === activeCategory);
 
     return (
         <section className="pb-10 w-full bg-background">
@@ -93,7 +66,7 @@ const BlogSection = () => {
                         </div>
                     </div>
                     <div className="w-full max-w-[27.5rem]">
-                        <Link href="#" className="block h-full w-full group">
+                        <Link href={`/project-details/${featuredProject.id}`} className="block h-full w-full group">
                             <div className="bg-transparent text-foreground flex flex-col gap-6 shadow-none size-full rounded-lg border border-zinc-800 py-0 overflow-hidden transition-all">
                                 <div className="p-0">
                                     <div className="p-2.5 text-sm leading-[1.2] font-medium text-muted-foreground">
@@ -101,25 +74,23 @@ const BlogSection = () => {
                                     </div>
                                     <div className="relative w-full aspect-[1.52]">
                                         <img
-                                            alt="How AI is Transforming Frontend Development"
+                                            alt={featuredProject.title}
                                             className="block size-full object-cover object-center"
-                                            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
+                                            src={featuredProject.image}
                                         />
                                     </div>
                                     <div className="flex w-full flex-col gap-5 p-5">
                                         <h2 className="text-lg leading-tight font-medium md:text-xl group-hover:underline">
-                                            How AI is Transforming Frontend Development
+                                            {featuredProject.title}
                                         </h2>
                                         <div className="w-full max-w-[20rem]">
                                             <p className="text-sm leading-[1.4] font-medium text-muted-foreground">
-                                                Explore how tools like GitHub Copilot, AI design
-                                                generators, and code assistants are changing the way
-                                                developers build UIs and ship features faster.
+                                                {featuredProject.description}
                                             </p>
                                         </div>
                                         <div>
                                             <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-8 rounded-md gap-1.5 px-3">
-                                                Discover the Future
+                                                {featuredProject.buttonText}
                                                 <ArrowRight className="size-4" />
                                             </button>
                                         </div>
@@ -155,10 +126,10 @@ const BlogSection = () => {
                         </div>
                         <div className="flex w-full flex-col gap-4 py-8 lg:gap-8">
                             <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-                                {displayedPosts.map((post, idx) => (
+                                {displayedPosts.map((post) => (
                                     <Link
-                                        key={idx}
-                                        href="#"
+                                        key={post.id}
+                                        href={`/project-details/${post.id}`}
                                         className="block h-full w-full group"
                                     >
                                         <div className="bg-card text-card-foreground flex flex-col gap-6 shadow-sm size-full rounded-lg border border-zinc-800 py-0 overflow-hidden transition-all group-hover:shadow-md">
