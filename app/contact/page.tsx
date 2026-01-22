@@ -10,7 +10,7 @@ export default function Contact() {
                 <ContactSection />
                 <div className="pb-19 -mt-10 md:-mt-34 relative z-10">
                     <CurvedLoop
-                        marqueeText="EL'S ✦ EL'S ✦ EL'S ✦ EL'S ✦"
+                        marqueeText="EL'S ✦ ❤︎ EL'S ✦ ❤︎ EL'S ✦ ❤︎ EL'S ✦ ❤︎"
                         speed={2}
                         curveAmount={400}
                         direction="right"
