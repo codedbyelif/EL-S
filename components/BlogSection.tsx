@@ -30,37 +30,13 @@ const BlogSection = () => {
                 <div className="container mx-auto flex flex-col items-start justify-start gap-16 py-10 lg:flex-row lg:items-center lg:justify-between px-6">
                     <div className="flex w-full flex-col justify-between gap-12">
                         <div className="flex w-full max-w-[36rem] flex-col gap-8">
-                            <nav aria-label="breadcrumb">
-                                <ol className="text-muted-foreground flex flex-wrap items-center gap-1.5 text-sm break-words sm:gap-2.5">
-                                    <li className="inline-flex items-center gap-1.5">
-                                        <Link
-                                            href="#"
-                                            className="hover:text-foreground transition-colors"
-                                        >
-                                            Resources
-                                        </Link>
-                                    </li>
-                                    <li role="presentation" aria-hidden="true">
-                                        <Slash className="size-3.5" />
-                                    </li>
-                                    <li className="inline-flex items-center gap-1.5">
-                                        <Link
-                                            href="#"
-                                            className="hover:text-foreground transition-colors"
-                                        >
-                                            Blogs
-                                        </Link>
-                                    </li>
-                                </ol>
-                            </nav>
+
                             <div className="flex w-full flex-col gap-5">
                                 <h1 className="text-[2.5rem] leading-[1.2] font-semibold md:text-5xl lg:text-6xl text-foreground">
-                                    Best Blog Articles
+                                    Ürün Geliştirme Günlüğü
                                 </h1>
                                 <p className="text-xl leading-[1.4] text-muted-foreground">
-                                    The best blog is one that captivates readers with engaging,
-                                    well-researched content presented in a clear and relatable
-                                    way.
+                                    Ürün geliştirme sürecini takip edebilirsiniz. Her gün yeni gelişmeler ve gelişmeleri paylaşacağız.
                                 </p>
                             </div>
                         </div>
@@ -70,7 +46,7 @@ const BlogSection = () => {
                             <div className="bg-transparent text-foreground flex flex-col gap-6 shadow-none size-full rounded-lg border border-zinc-800 py-0 overflow-hidden transition-all">
                                 <div className="p-0">
                                     <div className="p-2.5 text-sm leading-[1.2] font-medium text-muted-foreground">
-                                        Innovation Spotlight
+                                        Lovent
                                     </div>
                                     <div className="relative w-full aspect-[1.52]">
                                         <img

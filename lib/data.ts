@@ -18,7 +18,7 @@ export const projects: Project[] = [
         category: "Featured",
         title: "Innovation Spotlight: AI in Frontend",
         description: "Explore how tools like GitHub Copilot, AI design generators, and code assistants are changing the way developers build UIs and ship features faster.",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+        image: "/yazar-rehberi.png",
         buttonText: "Discover the Future",
         content: {
             heading: "How AI is Transforming Frontend Development",
