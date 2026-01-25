@@ -9,7 +9,6 @@ const Navbar = () => {
 
     const menuItems = [
         { name: "Ana Sayfa", href: "/" },
-        { name: "Hakkımda", href: "/about" },
         { name: "Projelerim", href: "/projects" },
         { name: "İletişim", href: "/contact" },
     ];
