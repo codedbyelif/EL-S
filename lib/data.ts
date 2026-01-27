@@ -86,7 +86,7 @@ export const projects: Project[] = [
         category: "Gömülü Sistemler",
         title: "Mikroişlemci IoT & Arduino Projeleri",
         description: "Gömülü sistemler ve IoT dünyasına giriş, eğitim serileri ve açık kaynak kodlu projeler.",
-        image: "/Mikroişlemci&Arduino logo 1.png",
+        image: "/arduinomikroişlemci.png",
         buttonText: "Proje Detayları",
         links: [
             { label: "Arduino 101 Repo", url: "https://github.com/codedbyelif/arduino-101" },
