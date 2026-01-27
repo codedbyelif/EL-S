@@ -56,10 +56,10 @@ const AppShowcase = () => {
             <div className="container mx-auto px-6 lg:px-20 border-b border-white/10 pb-0">
                 <div className="flex flex-col items-center gap-6">
                     <span className="inline-flex items-center justify-center rounded-full border border-white/10 px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 gap-1 text-white hover:bg-white/5 transition-colors">
-                        Get Started
+                        Mobil Uygulamalar
                     </span>
                     <h1 className="text-center text-4xl font-bold text-balance md:text-5xl lg:text-6xl text-white">
-                        Download our app and transform your workflow today
+                        Google Play ve App Store'da Çıkan Uygulamalarımız
                     </h1>
                 </div>
                 <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -84,16 +84,10 @@ const AppShowcase = () => {
                     <div className="order-1 relative z-10 w-1/3 max-w-[200px] md:max-w-xs translate-x-4 md:translate-x-8 lg:translate-x-12 opacity-90 scale-90 origin-bottom-right">
                         <div className="relative aspect-[433/882]">
                             <PhoneFrame
-                                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-phone-2.svg"
-                                alt="Phone 2"
+                                src="/app1.jpeg"
+                                alt="App Screen 1"
                                 className="block w-full h-full"
                             />
-                            {/* Logo Overlay */}
-                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
-                                <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl">
-                                    <div className="text-white font-bold text-xl">EL-S</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -101,16 +95,10 @@ const AppShowcase = () => {
                     <div className="order-2 relative z-20 w-1/2 max-w-[260px] md:max-w-sm shadow-2xl">
                         <div className="relative aspect-[433/882]">
                             <PhoneFrame
-                                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-phone-1.svg"
-                                alt="Phone 1"
+                                src="/app3.jpeg"
+                                alt="App Screen 3"
                                 className="block w-full h-full"
                             />
-                            {/* Logo Overlay */}
-                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
-                                <div className="p-6 bg-white/10 backdrop-blur-sm rounded-2xl">
-                                    <div className="text-white font-bold text-3xl">EL-S</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -118,16 +106,10 @@ const AppShowcase = () => {
                     <div className="order-3 relative z-10 w-1/3 max-w-[200px] md:max-w-xs -translate-x-4 md:-translate-x-8 lg:-translate-x-12 opacity-90 scale-90 origin-bottom-left">
                         <div className="relative aspect-[433/882]">
                             <PhoneFrame
-                                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-phone-3.svg"
-                                alt="Phone 3"
+                                src="/app2.jpeg"
+                                alt="App Screen 2"
                                 className="block w-full h-full"
                             />
-                            {/* Logo Overlay */}
-                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
-                                <div className="p-4 bg-white/10 backdrop-blur-sm rounded-xl">
-                                    <div className="text-white font-bold text-xl">EL-S</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
