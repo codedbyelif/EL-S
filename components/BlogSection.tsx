@@ -12,7 +12,7 @@ const BlogSection = () => {
         { name: "Tümü", label: "Tümü" },
         { name: "En Yeni", label: "En Yeni" },
         { name: "Devam Eden", label: "Devam Eden" },
-        { name: "Yatırım Alan", label: "Yatırım Alan" },
+        { name: "Gömülü Sistemler", label: "Gömülü Sistemler" },
     ];
 
     // Separate the featured project (first one) and the rest
