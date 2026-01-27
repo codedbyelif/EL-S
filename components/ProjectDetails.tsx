@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import {
     Carousel,
@@ -36,6 +36,31 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                         <p key={index}>{paragraph}</p>
                     ))}
                 </div>
+                <div className="mt-8 flex flex-wrap gap-4">
+                    {project.projectUrl && (
+                        <a
+                            href={project.projectUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                        >
+                            Siteyi Ziyaret Et
+                            <ExternalLink className="ml-2 h-4 w-4" />
+                        </a>
+                    )}
+                    {project.links && project.links.map((link, index) => (
+                        <a
+                            key={index}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+                        >
+                            {link.label}
+                            <ExternalLink className="ml-2 h-4 w-4" />
+                        </a>
+                    ))}
+                </div>
             </div>
 
             <div className="relative">
@@ -43,10 +68,10 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                     <CarouselContent className="-ml-4">
                         {project.content.images.map((imgSrc, index) => (
                             <CarouselItem key={index} className="pl-4 basis-full">
-                                <div className="aspect-[5/3] overflow-hidden rounded-lg">
+                                <div className="aspect-[5/3] overflow-hidden rounded-lg bg-white/5 flex items-center justify-center">
                                     <img
                                         alt={`${project.title} image ${index + 1}`}
-                                        className="h-full w-full object-cover hover:scale-105 transition-transform duration-500"
+                                        className="h-full w-full object-contain hover:scale-105 transition-transform duration-500"
                                         src={imgSrc}
                                     />
                                 </div>

@@ -1,13 +1,15 @@
 
+
 const logos = [
-    { alt: "Astro", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg" },
-    { alt: "Company 1", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg" },
-    { alt: "Company 2", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg" },
-    { alt: "Company 3", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg" },
-    { alt: "Company 4", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg" },
-    { alt: "Company 5", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg" },
-    { alt: "Company 6", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg" },
-    { alt: "Company 7", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-7.svg" },
+    { name: "Node.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    { name: "Express", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    { name: "React Native", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Next.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+    { name: "Tailwind CSS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+    { name: "Supabase", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
+    { name: "TypeScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { name: "C++", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+    { name: "C", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
 ];
 
 const LogoCarousel = () => {
@@ -16,15 +18,16 @@ const LogoCarousel = () => {
             <div className="container mx-auto px-6 lg:px-20">
                 <div className="relative w-full mask-gradient-x">
                     <div className="flex w-full overflow-hidden pause-on-hover px-4">
-                        <div className="flex animate-marquee gap-16 w-max items-center grayscale opacity-70">
+                        <div className="flex animate-marquee gap-16 w-max items-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
                             {/* Render logos twice to ensure seamless loop */}
                             {[...logos, ...logos].map((logo, index) => (
-                                <div key={index} className="flex justify-center items-center h-12 flex-shrink-0">
+                                <div key={index} className="flex justify-center items-center gap-3 h-12 flex-shrink-0 group cursor-default">
                                     <img
-                                        alt={logo.alt}
-                                        className="h-8 w-auto dark:invert hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                                        alt={logo.name}
+                                        className="h-8 w-auto dark:invert transition-all duration-300"
                                         src={logo.src}
                                     />
+                                    <span className="text-lg font-medium text-muted-foreground group-hover:text-white transition-colors duration-300">{logo.name}</span>
                                 </div>
                             ))}
                         </div>
