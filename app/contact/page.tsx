@@ -8,14 +8,14 @@ export default function Contact() {
             <Navbar />
             <div className="pt-20">
                 <ContactSection />
-                <div className="pb-19 -mt-10 md:-mt-34 relative z-10">
+                <div className="pb-10 -mt-24 relative z-0">
                     <CurvedLoop
-                        marqueeText="EL'S ✦ ❤︎ EL'S ✦ ❤︎ EL'S ✦ ❤︎ EL'S ✦ ❤︎"
+                        marqueeText="EL'S ✦ EL'S ✦ EL'S ✦ EL'S ✦ EL'S ✦"
                         speed={2}
                         curveAmount={400}
                         direction="right"
                         interactive
-                        className="custom-text-style"
+                        className="text-[4rem]"
                     />
                 </div>
             </div>
