@@ -683,6 +683,7 @@ export const GridScan: React.FC<GridScanProps> = ({
     useEffect(() => {
         let canceled = false;
         const load = async () => {
+            if (!enableWebcam) return;
             try {
                 await Promise.all([
                     faceapi.nets.tinyFaceDetector.loadFromUri(modelsPath),

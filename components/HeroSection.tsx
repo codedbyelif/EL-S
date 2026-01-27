@@ -1,7 +1,11 @@
+"use client";
 
 import React from 'react';
-import GridScan from './GridScan';
+import dynamic from 'next/dynamic';
+
 import Link from 'next/link';
+
+const GridScan = dynamic(() => import('./GridScan'), { ssr: false });
 
 const HeroSection = () => {
     return (
