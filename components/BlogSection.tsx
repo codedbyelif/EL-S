@@ -51,7 +51,7 @@ const BlogSection = () => {
                                     <div className="relative w-full aspect-[1.52]">
                                         <img
                                             alt={featuredProject.title}
-                                            className="block size-full object-cover object-center"
+                                            className="block size-full object-cover object-[50%_30%]"
                                             src={featuredProject.image}
                                         />
                                     </div>
@@ -80,7 +80,7 @@ const BlogSection = () => {
             <div className="py-10">
                 <div className="container mx-auto flex flex-col gap-8 px-6">
                     <h2 className="text-[1.75rem] leading-none font-medium md:text-[2.25rem] lg:text-[2rem] text-foreground">
-                        All Blogs
+                        Bütün Projeler
                     </h2>
                     <div>
                         <div>
@@ -116,7 +116,7 @@ const BlogSection = () => {
                                                 <div className="relative w-full aspect-[1.52]">
                                                     <img
                                                         alt={post.title}
-                                                        className="block size-full object-cover object-center"
+                                                        className="block size-full object-cover object-[50%_30%]"
                                                         src={post.image}
                                                     />
                                                 </div>

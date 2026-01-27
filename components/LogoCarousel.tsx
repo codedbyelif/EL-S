@@ -1,7 +1,7 @@
 
 const logos = [
-    { alt: "Astro", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg" },
-    { alt: "Company 1", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg" },
+    { alt: "Astro", src: "https://wp.logos-download.com/wp-content/uploads/2022/12/TypeScript_Logo-700x168.png" },
+    { alt: "Company 1", src: "https://raw.githubusercontent.com/supabase/supabase/master/packages/common/assets/images/supabase-logo-wordmark--dark.png" },
     { alt: "Company 2", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg" },
     { alt: "Company 3", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg" },
     { alt: "Company 4", src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg" },

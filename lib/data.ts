@@ -5,6 +5,8 @@ export interface Project {
     description: string;
     image: string;
     buttonText: string;
+    projectUrl?: string;
+    links?: { label: string; url: string }[];
     content: {
         heading: string;
         paragraphs: string[];
@@ -14,86 +16,93 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-        id: "innovation-spotlight",
-        category: "Featured",
-        title: "Innovation Spotlight: AI in Frontend",
-        description: "Explore how tools like GitHub Copilot, AI design generators, and code assistants are changing the way developers build UIs and ship features faster.",
-        image: "/yazar-rehberi.png",
-        buttonText: "Discover the Future",
+        id: "Lovent",
+        category: "İlk Proje",
+        title: "Lovent Kitap Okuma / Yazma Projesi ",
+        description: "Kitap okumayı , yazmayı seven insanlar için web ve mobil üzerinden erişebilecekleri platform oluşturmak.",
+        image: "/loventlogo1,.png",
+        buttonText: "Proje Detayları",
+        projectUrl: "https://www.lovent.ink/",
         content: {
-            heading: "How AI is Transforming Frontend Development",
+            heading: "Lovent Kitap Okuma / Yazma Projesi",
             paragraphs: [
-                "Artificial Intelligence is revolutionizing the way we approach frontend development. From intelligent code completion to automated design systems, AI tools are becoming indispensable.",
-                "We explore the impact of AI on developer productivity, code quality, and the future of user interface design. Learn how to leverage these powerful tools in your workflow.",
-                "Join us as we dive deep into the practical applications of AI in modern web development."
+                "Lovent, kullanıcıların kitap okuyup dinleyebildiği, çevrimdışı erişim sağlayabildiği ve okuma sırasında müzik dinleyebildiği kapsamlı bir platformdur. Kullanıcılar, profillerine fotoğraf ekleyebilir, diğer okurlarla DM üzerinden iletişim kurabilir, profillere ve kitap satırlarına yorum bırakabilir, ayrıca kendi okuma listelerini oluşturabilirler.",
+                "Yazarlar için sesli ve metin tabanlı yazma, özel font seçenekleri ve AI destekli karakter/kapak tasarımı gibi araçlar sunulur. Abonelik sistemleri, yarışmalar ve popülerlik bazlı ödemelerle gelir elde edebilirler. 'Lovent Studio' ile belirli bir başarıya ulaşan eserler için yayıncılık ve dizi/film uyarlaması fırsatları sağlanır.",
+                "Kullanılan Teknolojiler: Figma, Next.js, React Native, Jotai, TypeScript, Tailwind CSS, tRPC, Swagger, Supabase."
             ],
             images: [
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw17.jpeg",
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg",
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw8.jpeg"
+                "/lovent 1.png",
+                "/Lovent 2.png",
+                "/Lovent 3 .png"
             ]
         }
     },
     {
-        id: "vscode-extensions",
+        id: "RezzGo",
         category: "En Yeni",
-        title: "5 VS Code Extensions That Will Save You Hours",
-        description: "Discover must-have extensions to boost your coding efficiency and streamline your workflow.",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-        buttonText: "Boost Your Editor",
+        title: "RezzGo - Rezervasyon Uygulaması",
+        description: "Kullanıcıların rezervasyon yapabileceği mobil ve web uygulaması.",
+        image: "/rezzgologo1.png",
+        buttonText: "Proje Detayları",
+        projectUrl: "https://www.rezzgo.com/",
         content: {
-            heading: "Essential VS Code Extensions",
+            heading: "RezzGo - Rezervasyon Uygulaması",
             paragraphs: [
-                "Visual Studio Code is powerful out of the box, but the right extensions can take your productivity to the next level.",
-                "In this guide, we review 5 top-rated extensions that help with code formatting, debugging, version control, and more.",
-                "Stop wasting time on repetitive tasks and let your editor work for you."
+                "RezzGo, farklı sektörlerdeki (sağlık, eğitim, güzellik, spor, yemek vb.) işletmeler ile kullanıcıları tek bir dijital platformda buluşturan, 7/24 erişilebilir ve güvenli bir online rezervasyon sistemidir. Hem kullanıcıların hızlı randevu almasını hem de işletmelerin tüm süreçlerini tek panelden yönetmesini sağlar.",
+                "Kullanıcılar için esnek ödeme seçenekleri, yorum ve puanlama sistemi ile güvenli bir deneyim sunulurken; işletmeler için otomatik onay sistemi, depozito ile randevu güvenliği, akıllı vardiya planlaması ve detaylı raporlama gibi özellikler mevcuttur.",
+                "Kullanılan Teknolojiler: Next.js, tRPC, Node.js, React Native (Expo), TypeScript, Tailwind CSS, shadcn/ui, Supabase, Git ve Figma."
             ],
             images: [
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw17.jpeg",
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg",
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw8.jpeg"
+                "/rezzgo1.png",
+                "/rezzgo2.png",
+                "/rezzgo3.png"
             ]
         }
     },
     {
-        id: "time-management",
+        id: "itu-marge",
         category: "Devam Eden",
-        title: "Time Management for Developers",
-        description: "Learn proven strategies to avoid burnout and stay on top of your tasks without stress.",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-        buttonText: "Manage Your Time",
+        title: "İTÜ MARGE / KULÜP WEB SİTESİ",
+        description: "İstanbul Teknik Üniversitesinde olan 'Marge' kulüpünün web sitesi.",
+        image: "/itu-marge.logo.jpeg",
+        buttonText: "Proje Detayları",
+        projectUrl: "https://itu-marge.vercel.app/",
         content: {
-            heading: "Mastering Time as a Developer",
+            heading: "İTÜ MARGE - Teknoloji ve İnovasyon",
             paragraphs: [
-                "Time management is a critical skill for any developer. Balancing coding, meetings, and learning can be challenging.",
-                "We discuss techniques like the Pomodoro method, time blocking, and setting realistic goals to keep you focused and productive.",
-                "Avoid burnout and achieve a healthy work-life balance with these expert tips."
+                "İTÜ MARGE, madencilik sektörünün geleneksel dinamiklerini yüksek teknolojiyle yeniden tanımlayan, üniversite-sanayi iş birliğinin en somut örneklerinden biridir. Mining Automation, Robotics & Ground Engineering vizyonuyla; otonom sistemler, insansız hava araçları ve yer altı robotik çözümleri gibi alanlarda inovasyon üretmektedir.",
+                "Bu projede, MARGE ekibinin multidisipliner yapısını ve teknik yetkinliklerini yansıtan, kullanıcı deneyimini (UX) ön planda tutan modern bir web sitesi geliştirilmektedir. Amaç, karmaşık mühendislik süreçlerini herkes için erişilebilir ve estetik bir dijital platformda sunmaktır.",
+                "Kullanılan Teknolojiler: Next.js, TypeScript, Tailwind CSS, Figma."
             ],
             images: [
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw17.jpeg",
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg",
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw8.jpeg"
+                "/itumarge1.png",
+                "/itumarge2.png",
+                "/itumarge3.png"
             ]
         }
     },
     {
-        id: "automation",
-        category: "Yatırım Alan",
-        title: "Automate Your Workflow with Task Runners",
-        description: "Use tools like Gulp, npm scripts, and GitHub Actions to automate repetitive development tasks.",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-        buttonText: "Automate Now",
+        id: "mikroislemci-iot-arduino",
+        category: "Gömülü Sistemler",
+        title: "Mikroişlemci IoT & Arduino Projeleri",
+        description: "Gömülü sistemler ve IoT dünyasına giriş, eğitim serileri ve açık kaynak kodlu projeler.",
+        image: "/Mikroişlemci&Arduino logo 1.png",
+        buttonText: "Proje Detayları",
+        links: [
+            { label: "Arduino 101 Repo", url: "https://github.com/codedbyelif/arduino-101" },
+            { label: "IoT Microprocessor Repo", url: "https://github.com/codedbyelif/ioT-microprocessor" }
+        ],
         content: {
-            heading: "The Power of Automation",
+            heading: "Arduino & Nuvoton Gömülü Sistem Projeleri",
             paragraphs: [
-                "Automation is the key to scaling your development process. Task runners and CI/CD pipelines can handle the heavy lifting.",
-                "Learn how to set up automated workflows for testing, building, and deploying your applications.",
-                "Focus on writing code, not running commands. Let automation handle the rest."
+                "Bu proje, geliştiricilerin Arduino mikrodenetleyici programlamayı öğrenmesine ve deneyimlemesine yardımcı olmak için tasarlanmış Arduino 101 örneklerini ve kaynak kodlarını içerir. Her modül, ayrıntılı yorumlar ve açıklamalarla desteklenerek kapsamlı bir öğrenme süreci sunar.",
+                "Ayrıca Nuvoton M261 ARM Cortex-M23 mikrodenetleyicisi üzerine kurulu kapsamlı gömülü sistem uygulamalarını kapsar. GPIO kesme yönetimi, UART haberleşmesi ve çeşitli IoT kontrol senaryoları gibi gelişmiş özellikleri barındıran bu projeler, profesyonel gömülü yazılım geliştirmeye odaklanır.",
+                "Kullanılan Teknolojiler: C/C++, Arduino IDE, Nuvoton M261 (ARM Cortex-M23), GPIO, UART, IoT Protocols."
             ],
             images: [
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw17.jpeg",
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg",
-                "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw8.jpeg"
+                "http://direct.nuvoton.com/1453-large_default/numaker-iiot-nuc980g2.jpg",
+                "https://store.arduino.cc/cdn/shop/files/ABX00173_00.front_1000x750.jpg?v=1768837006",
+                "https://maker.robotistan.com/wp-content/uploads/2021/01/Untitled-Sketch_bb-min.png"
             ]
         }
     }
