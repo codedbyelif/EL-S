@@ -8,7 +8,7 @@ export default function Contact() {
             <Navbar />
             <div className="pt-20">
                 <ContactSection />
-                <div className="pb-10 -mt-24 relative z-0">
+                <div className="pb-10 -mt-4 md:-mt-24 relative z-0">
                     <CurvedLoop
                         marqueeText="EL'S ✦ EL'S ✦ EL'S ✦ EL'S ✦ EL'S ✦"
                         speed={2}

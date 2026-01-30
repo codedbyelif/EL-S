@@ -137,7 +137,7 @@ Contributions are what make the open source community such an amazing place to l
 
 ## License
 
-Copyright (c) 2024 codedbyelif. All rights reserved.
+Copyright (c) 2026 codedbyelif. All rights reserved.
 
 This project is open for viewing and educational purposes. Please contact the author for commercial usage or redistribution inquiries.
 
