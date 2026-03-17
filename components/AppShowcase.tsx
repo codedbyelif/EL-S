@@ -63,14 +63,14 @@ const AppShowcase = () => {
                     </h1>
                 </div>
                 <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                    <Link href="#">
+                    <Link href="https://apps.apple.com/tr/app/rezzgo-business/id6759405397?l=tr">
                         <img
                             alt="app store"
                             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/badges/appstore.svg"
                             className="h-8 w-auto"
                         />
                     </Link>
-                    <Link href="#">
+                    <Link href="https://play.google.com/store/apps/details?id=com.jefedejefes.rezzgo&hl=en">
                         <img
                             alt="google play"
                             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/badges/googleplay.svg"

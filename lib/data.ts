@@ -38,6 +38,27 @@ export const projects: Project[] = [
         }
     },
     {
+        id: "kitty-type",
+        category: "İlk Proje",
+        title: "Kitty Type - Klavye Hız Testi",
+        description: "Kullanıcıların klavye hızını test edebileceği bir web uygulaması.",
+        image: "/kittylogo.png",
+        buttonText: "Proje Detayları",
+        projectUrl: "https://kitty-type.vercel.app/",
+        content: {
+            heading: "Kitty Type - Klavye Hız Testi",
+            paragraphs: [
+                "Kitty Type, kullanıcıların klavye hızını test edebileceği bir web uygulamasıdır. Kullanıcılar, farklı zorluk seviyelerindeki metinleri yazarak klavye hızlarını test edebilirler.",
+                "Kullanılan Teknolojiler: Next.js, TypeScript, Tailwind CSS, Git ve Figma."
+            ],
+            images: [
+                "/kitty1.png",
+                "/kitty2.png",
+                "/kitty3.png"
+            ]
+        }
+    },
+    {
         id: "RezzGo",
         category: "En Yeni",
         title: "RezzGo - Rezervasyon Uygulaması",
@@ -106,4 +127,5 @@ export const projects: Project[] = [
             ]
         }
     }
-];
+]
+    ;
