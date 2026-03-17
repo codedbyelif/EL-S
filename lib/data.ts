@@ -81,6 +81,29 @@ export const projects: Project[] = [
         }
     },
     {
+        id: "els-judge",
+        category: "LLM",
+        title: "EL'S Judge - Kodlarınızı Birden Fazla LLM ile Analiz Etme",
+        image: "/tuilogo.png",
+        description: "Kodunu değerlendiren ve geliştiren, iki farklı modeli aynı anda kullanıp sonuçları terminalde yan yana gösteren TUI tabanlı bir uygulama.",
+        buttonText: "Proje Detayları",
+        links: [
+            { label: "GitHub Reposunu İncele", url: "https://github.com/codedbyelif/els-judge" }
+        ],
+        content: {
+            heading: "EL'S Judge - Kodlarınızı Birden Fazla LLM ile Analiz Etme",
+            paragraphs: [
+                "EL'S Judge, geliştiricilerin kodlarını analiz etmek ve iyileştirmek için tasarlanmış, terminal tabanlı (TUI) bir araçtır. Bu uygulama, tek bir LLM (Büyük Dil Modeli) yerine, aynı kod parçasını birden fazla modeli kullanarak analiz etme imkanı sunar. Kullanıcılar, farklı modellerin (örneğin GPT-4o, Claude 3.5 Sonnet, Gemini 2.5 Pro) verdiği yanıtları yan yana görerek, kod kalitesi, güvenlik açıkları ve performans iyileştirmeleri hakkında kapsamlı bir değerlendirme elde edebilirler.",
+                "Kullanılan Teknolojiler: Python 3.11, Textual, AsyncIO, Git, Docker, Pydantic, Pydantic Settings, SQLAlchemy, LiteLLM, psycopg2-binary, Rich."
+            ],
+            images: [
+                "/tui.png",
+                "/tui2.png",
+
+            ]
+        }
+    },
+    {
         id: "itu-marge",
         category: "Devam Eden",
         title: "İTÜ MARGE / KULÜP WEB SİTESİ",
